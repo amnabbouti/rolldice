@@ -1,0 +1,185 @@
+.container {
+  width:50%;
+  margin: auto;
+  text-align: center;
+}
+body {
+  background-image: url(./Assets/images/background.jpg);
+  background-size:cover;
+  z-index: -1;
+}
+html, body {
+  height: auto; 
+  margin: 40px; 
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  display: block;
+  margin: 25px;
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 6rem;
+  color: #0e0089; 
+  text-align: center;
+  text-shadow: 
+    1px 1px 3px rgba(9, 0, 255, 0.4), 
+    0 0 10px rgba(9, 0, 255, 0.6), 
+    0 0 20px rgba(9, 0, 255, 0.4); 
+  animation: glow 2s infinite alternate; 
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 
+      1px 1px 3px rgba(9, 0, 255, 0.4),
+      0 0 10px rgba(9, 0, 255, 0.6),
+      0 0 20px rgba(9, 0, 255, 0.4);
+    color: #0e0089; 
+  }
+  100% {
+    text-shadow: 
+      1px 1px 5px rgba(24, 218, 7, 0.6), 
+      0 0 15px rgba(24, 148, 61, 0.5), 
+      0 0 30px rgba(26, 178, 46, 0.3);
+    color: #24942b; 
+  }
+}
+
+p {
+  font-size: 2.5rem;
+  color: #ffffff; 
+  font-family: "Denk One", sans-serif;
+  text-align: center;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6); 
+  margin: 50px;
+  background: linear-gradient(70deg, #ff0080 0%, #ff8c00 100%); 
+  padding: 10px; 
+  border: 5px solid transparent; 
+  border-image: linear-gradient(90deg, 
+  #00c6ff, 
+  #0072ff, 
+  #00e5ff, 
+  #1de9b6, 
+  #76ff03, 
+  #c6ff00, 
+  #ffea00, 
+  #ff3d00) 1;
+  border-radius: 10px; 
+  position: relative; 
+  overflow: hidden; 
+  animation: pulse 2s infinite; 
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+img {
+  width:50%;
+  padding: 10px;
+}
+
+.player2-wins-background {
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/ece6df15203791.5628e1878ad0c.png');
+  background-position: center;
+  animation: pulsate 0.5s ease-in-out infinite;
+}
+.player1-wins-background {
+  background-image: url('https://www.bladi.net/img/logo/arton66826.jpg'); 
+  background-position: center;
+  animation: pulsate 0.5s ease-in-out infinite;
+}
+.player2-wins-background,
+.player1-wins-background {
+  position: fixed; 
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 28%; 
+  z-index: 1; 
+  opacity: 1; 
+}
+@keyframes pulsate {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+#rollDiceButton {
+  background: linear-gradient(135deg, #c0392b, #d4ac0d, #e67e22, #d55a8a, #27ae60, #2980b9); 
+  border-radius: 50px; 
+  border: none; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  font-family: 'Courier New', Courier, monospace; 
+  color: rgb(18, 5, 192); 
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.8); 
+  outline: none; 
+}
+
+#rollDiceButton:hover {
+  transform: scale(1.1) rotate(-3deg) translateY(-5px); 
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 255, 255, 1); 
+}
+
+#rollDiceButton:active {
+  transform: scale(0.95) rotate(3deg) translateY(2px); 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+  }
+  40% {
+      transform: translateY(-15px); 
+  }
+  60% {
+      transform: translateY(-10px); 
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease forwards; 
+}
+.bounce {
+  animation: bounce 0.5s; 
+}
+
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+
+
+
+
