@@ -1,7 +1,8 @@
 .container {
-  width:50%;
-  margin: auto;
-  text-align: center;
+  width: 90%; 
+  max-width: 600px; 
+  margin: auto; 
+  text-align: center; 
 }
 
 /*Body and Background*/
@@ -29,7 +30,6 @@ h1 {
     0 0 20px rgba(9, 0, 255, 0.4); 
   animation: glow 2s infinite alternate; 
 }
-
 p {
   font-size: 2rem;
   color: #ffffff; 
@@ -60,12 +60,11 @@ p {
   text-align: center;
   display: inline-block;
 }
-
 img {
   width:50%;
   padding: 10px;
+  height: auto;
 }
-
 .player2-wins-background {
   background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/ece6df15203791.5628e1878ad0c.png');
   background-position: center;
@@ -132,7 +131,6 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 }
-
 
 /* KeyFrames */
 @keyframes bounce {
@@ -202,12 +200,12 @@ footer {
   .container {
     width: 90%; 
   }
-  
+
   h1 {
     font-size: 4rem; 
     margin: 20px; 
   }
-  
+
   p {
     font-size: 1.5rem; 
     margin: 20px; 
@@ -215,6 +213,8 @@ footer {
 
   img {
     width: 80%; 
+    max-width: 100%; 
+    height: auto; 
   }
 
   #rollDiceButton {
@@ -222,6 +222,24 @@ footer {
     padding: 8px; 
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem; 
+  }
+
+  p {
+    font-size: 1.2rem; 
+  }
+
+  #rollDiceButton {
+    font-size: 1rem;
+  }
+}
+
+
+
+
 
 
 
